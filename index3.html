@@ -2,14 +2,18 @@
 <html lang="uk">
 <head>
   <meta charset="utf-8">
-  <title>3 —  блоки прізвища</title>
+  <title>3 — Показати блоки прізвища</title>
+  <style>
+    #letters { display:flex; gap:8px; flex-wrap:wrap; margin-top:12px; }
+    #letters div { padding:8px 12px; border:1px solid #ccc; border-radius:6px; font:600 16px/1 sans-serif; }
+  </style>
 </head>
 <body>
   <button id="btn">Показати блоки</button>
   <div id="letters"></div>
 
   <script type="module">
-    const lastName = "ТКАЧУК"; 
+    const lastName = "Ткачук"; 
 
     const btn = document.getElementById('btn');
     const box = document.getElementById('letters');
